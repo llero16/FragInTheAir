@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name" translatable="false">FragInTheAir</string>
+
+    <string-array
+        name="string_array_name">
+        <item>origin</item>
+        <item>destination</item>
+        <item>departure_date</item>
+        <item>return_date</item>
+        <item>arrive_by</item>
+        <item>return_by</item>
+        <item>adults</item>
+        <item>children</item>
+        <item>infants</item>
+        <item>include_airlines</item>
+        <item>exclude_airlines</item>
+        <item>nonstop</item>
+        <item>max_price</item>
+        <item>currency</item>
+        <item>travel_class</item>
+        <item>number_of_results</item>
+
+    </string-array>
+    
+    
+    
+    <string name="origin">Από:</string>
+    <string name="destination">Πρός:</string>
+    <string name="time">Ώρα Άφιξης</string>
+    <string name="search">Πέταξε Τώρα!</string>
+    <string name="date">Ημερομηνία Αναχώρισης</string>
+    <string name="class_eco">Οικονομική</string>
+    <string name="class_premium">Premium Οικονομική</string>
+    <string name="class_business">Business</string>
+    <string name="class_first">First Class</string>
+    <string name="stop">Με Στάση</string>
+    <string name="non_stop">Απευθείας Πτήση</string>
+
+
+</resources>

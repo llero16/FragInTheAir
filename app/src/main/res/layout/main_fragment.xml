@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/border_light">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/departure_airport_editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPersonName"
+        android:hint="@string/origin"
+        android:selectAllOnFocus="true"
+        android:layout_weight="1.75"
+        android:textColor="@color/midnight_blue"
+        android:fontFamily="sans-serif"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorLink="@color/midnight_blue"
+        android:textColorHint="@color/sky_blue" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/arrival_airport_editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textPersonName"
+        android:hint="@string/destination"
+        android:layout_below="@+id/departure_airport_editText"
+        android:selectAllOnFocus="true"
+        android:layout_weight="1.75"
+        android:textColor="@color/midnight_blue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="@color/sky_blue"
+        android:textColorLink="@color/midnight_blue"
+         />
+
+
+    <LinearLayout
+        android:id="@+id/date_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="2.5"
+        android:clickable="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/departure_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/date"
+                android:textColor="@color/sky_blue"
+                android:onClick="setDate"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/calendar"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/arrive_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/time"
+                android:textColor="@color/sky_blue"
+                android:layout_weight="1"
+                android:onClick="showDatePickerDialog"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/clock"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_weight="2.5"
+        android:clickable="true"
+        android:onClick="showFragment1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:contextClickable="false"
+            android:focusable="false"
+            >
+
+            <ImageButton
+                android:id="@+id/adults_button"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_weight="2"
+                android:background="@drawable/adult_azure"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/adults_edit_text"
+                android:layout_width="0dp"
+                android:maxWidth="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:contextClickable="false"
+            android:focusable="false">
+
+            <ImageButton
+                android:id="@+id/kids_button"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_weight="2"
+                android:background="@drawable/child_azure"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/kids_edit_text"
+                android:layout_width="0dp"
+                android:maxWidth="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:contextClickable="false"
+            android:focusable="false">
+
+            <ImageButton
+                android:id="@+id/baby_button"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_weight="2"
+                android:background="@drawable/infant_azure"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/baby_edit_text"
+                android:layout_width="0dp"
+                android:maxWidth="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="@string/search"
+        android:textColor="@android:color/background_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_button"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.20"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/border_medium"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:lineSpacingExtra="8sp" />
+
+
+</LinearLayout>

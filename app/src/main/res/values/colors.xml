@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="azure">#007fff</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="royal_blue">#4169e1</color>
+    <color name="navy_blue">#000080</color>
+    <color name="sky_blue">#7ec0ee</color>
+    <color name="midnight_blue">#003366</color>
+</resources>

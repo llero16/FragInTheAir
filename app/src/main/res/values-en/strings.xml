@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="class_eco" translatable="false">Economy</string>
+    <string name="destination">To:</string>
+    <string name="date">Departure Date</string>
+    <string name="class_premium">Premium Economy</string>
+    <string name="class_first">First Class</string>
+    <string name="class_business">Business</string>
+    <string name="origin">From:</string>
+    <string name="search">Fly Now!</string>
+    <string name="time">Arrival Time</string>
+    <string name="stop">With Stop</string>
+    <string name="non_stop">Nonstop Flight</string>
+</resources>

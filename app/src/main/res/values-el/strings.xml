@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="class_eco" translatable="false">Οικονομική</string>
+    <string name="destination_gre"></string>
+    <string name="destination">Πρός:</string>
+    <string name="date">Ημερομηνία Αναχώρισης</string>
+    <string name="class_premium">Premium Οικονομική</string>
+    <string name="class_first">First Class</string>
+    <string name="class_business">Business</string>
+    <string name="origin">Από:</string>
+    <string name="search">Πέταξε Τώρα!</string>
+    <string name="time">Ώρα Άφιξης</string>
+    <string name="stop">Με Στάση</string>
+    <string name="non_stop">Απευθείας Πτήση</string>
+</resources>

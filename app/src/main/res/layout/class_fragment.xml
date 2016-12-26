@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_medium"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:id="@+id/classes_radiogroup"
+        android:weightSum="4"
+        android:checkedButton="@+id/economy_radiobutton">
+
+        <RadioButton
+            android:text="Οικονομική"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:id="@+id/economy_radiobutton"
+            android:layout_weight="1"
+            android:onClick="SelectClass"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white" />
+
+        <RadioButton
+            android:text="First Class"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:id="@+id/firstClass__radiobutton"
+            android:layout_weight="1"
+            android:onClick="SelectClass"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white" />
+
+        <RadioButton
+            android:text="Premium Οικονομική"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:id="@+id/premiumEco_radiobutton"
+            android:layout_weight="1"
+            android:onClick="SelectClass"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white" />
+
+        <RadioButton
+            android:text="Business"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:id="@+id/business_radiobutton"
+            android:layout_weight="1"
+            android:onClick="SelectClass"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white" />
+
+    </RadioGroup>
+</LinearLayout>
